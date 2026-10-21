@@ -1,0 +1,141 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.smartpantrymanager"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <permission
+11-->[androidx.core:core:1.9.0] C:\Users\emily\.gradle\caches\transforms-3\8222cb7143ba57e62d848e6565915cfd\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+12        android:name="com.smartpantrymanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.9.0] C:\Users\emily\.gradle\caches\transforms-3\8222cb7143ba57e62d848e6565915cfd\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.9.0] C:\Users\emily\.gradle\caches\transforms-3\8222cb7143ba57e62d848e6565915cfd\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.smartpantrymanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.9.0] C:\Users\emily\.gradle\caches\transforms-3\8222cb7143ba57e62d848e6565915cfd\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.9.0] C:\Users\emily\.gradle\caches\transforms-3\8222cb7143ba57e62d848e6565915cfd\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:5:5-52:19
+18        android:allowBackup="true"
+18-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.9.0] C:\Users\emily\.gradle\caches\transforms-3\8222cb7143ba57e62d848e6565915cfd\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:7:9-65
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:fullBackupContent="@xml/backup_rules"
+23-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:8:9-54
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:9:9-43
+25        android:label="@string/app_name"
+25-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:10:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:11:9-54
+27        android:supportsRtl="true"
+27-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:12:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.SmartPantryManager" >
+29-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:13:9-56
+30
+31        <!-- Main host with Bottom Navigation -->
+32        <activity
+32-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:16:9-24:20
+33            android:name="com.smartpantrymanager.MainActivity"
+33-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:17:13-41
+34            android:exported="true"
+34-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:18:13-36
+35            android:label="@string/app_name" >
+35-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:19:13-45
+36            <intent-filter>
+36-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:20:13-23:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:21:17-69
+37-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:21:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:22:17-77
+39-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:22:27-74
+40            </intent-filter>
+41        </activity>
+42        <activity
+42-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:26:9-29:58
+43            android:name="com.smartpantrymanager.PantryListActivity"
+43-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:27:13-47
+44            android:label="My Pantry"
+44-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:28:13-38
+45            android:parentActivityName="com.smartpantrymanager.MainActivity" />
+45-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:29:13-55
+46        <activity
+46-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:31:9-35:58
+47            android:name="com.smartpantrymanager.AddEditIngredientActivity"
+47-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:32:13-54
+48            android:label="Add Ingredient"
+48-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:33:13-43
+49            android:parentActivityName="com.smartpantrymanager.MainActivity"
+49-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:34:13-55
+50            android:windowSoftInputMode="adjustResize" />
+50-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:35:13-55
+51        <activity
+51-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:37:9-40:58
+52            android:name="com.smartpantrymanager.SuggestedRecipesActivity"
+52-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:38:13-53
+53            android:label="Suggested Recipes"
+53-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:39:13-46
+54            android:parentActivityName="com.smartpantrymanager.MainActivity" />
+54-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:40:13-55
+55        <activity
+55-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:42:9-45:70
+56            android:name="com.smartpantrymanager.RecipeDetailActivity"
+56-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:43:13-49
+57            android:label="Recipe Detail"
+57-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:44:13-42
+58            android:parentActivityName="com.smartpantrymanager.SuggestedRecipesActivity" />
+58-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:45:13-67
+59        <activity
+59-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:47:9-50:58
+60            android:name="com.smartpantrymanager.SettingsActivity"
+60-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:48:13-45
+61            android:label="Settings"
+61-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:49:13-37
+62            android:parentActivityName="com.smartpantrymanager.MainActivity" />
+62-->C:\Users\emily\OneDrive\Documents\BScIT Y3\semester 2\Mobile App 700\SmartPantryManager\app\src\main\AndroidManifest.xml:50:13-55
+63
+64        <service
+64-->[androidx.room:room-runtime:2.6.1] C:\Users\emily\.gradle\caches\transforms-3\edd78475f9a71f9091f542741a3f0f22\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+65            android:name="androidx.room.MultiInstanceInvalidationService"
+65-->[androidx.room:room-runtime:2.6.1] C:\Users\emily\.gradle\caches\transforms-3\edd78475f9a71f9091f542741a3f0f22\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+66            android:directBootAware="true"
+66-->[androidx.room:room-runtime:2.6.1] C:\Users\emily\.gradle\caches\transforms-3\edd78475f9a71f9091f542741a3f0f22\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+67            android:exported="false" />
+67-->[androidx.room:room-runtime:2.6.1] C:\Users\emily\.gradle\caches\transforms-3\edd78475f9a71f9091f542741a3f0f22\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+68
+69        <provider
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\emily\.gradle\caches\transforms-3\7e018ad17737e3bbff7428485e891d69\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+70            android:name="androidx.startup.InitializationProvider"
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\emily\.gradle\caches\transforms-3\7e018ad17737e3bbff7428485e891d69\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+71            android:authorities="com.smartpantrymanager.androidx-startup"
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\emily\.gradle\caches\transforms-3\7e018ad17737e3bbff7428485e891d69\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+72            android:exported="false" >
+72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\emily\.gradle\caches\transforms-3\7e018ad17737e3bbff7428485e891d69\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+73            <meta-data
+73-->[androidx.emoji2:emoji2:1.2.0] C:\Users\emily\.gradle\caches\transforms-3\7e018ad17737e3bbff7428485e891d69\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+74                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+74-->[androidx.emoji2:emoji2:1.2.0] C:\Users\emily\.gradle\caches\transforms-3\7e018ad17737e3bbff7428485e891d69\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+75                android:value="androidx.startup" />
+75-->[androidx.emoji2:emoji2:1.2.0] C:\Users\emily\.gradle\caches\transforms-3\7e018ad17737e3bbff7428485e891d69\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+76            <meta-data
+76-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\emily\.gradle\caches\transforms-3\c91847f6f59d8b4294542c11a42ead75\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+77                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+77-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\emily\.gradle\caches\transforms-3\c91847f6f59d8b4294542c11a42ead75\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+78                android:value="androidx.startup" />
+78-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\emily\.gradle\caches\transforms-3\c91847f6f59d8b4294542c11a42ead75\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+79        </provider>
+80    </application>
+81
+82</manifest>
