@@ -1,22 +1,19 @@
+//Imports
 package com.smartpantrymanager;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Switch;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.button.MaterialButton;
 import com.smartpantrymanager.database.AppDatabase;
 
-/**
- * SettingsActivity - manages user preferences and data clearance.
- */
+// SettingsActivity - manages user preferences and data clearance.
+
 public class SettingsActivity extends AppCompatActivity {
 
     private AppDatabase pantryDatabase;

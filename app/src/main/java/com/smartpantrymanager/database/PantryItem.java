@@ -4,9 +4,8 @@ import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
-/**
- * PantryItem - entity representing an item stored in the pantry.
- */
+// PantryItem - entity representing an item stored in the pantry.
+
 @Entity(tableName = "pantry_items")
 public class PantryItem {
 

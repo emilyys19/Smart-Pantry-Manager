@@ -1,22 +1,18 @@
+//Imports
 package com.smartpantrymanager.adapters;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.smartpantrymanager.R;
 import com.smartpantrymanager.database.PantryItem;
-
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * PantryAdapter - custom adapter for pantry RecyclerView.
- */
+// PantryAdapter - custom adapter for pantry RecyclerView.
+
 public class PantryAdapter extends RecyclerView.Adapter<PantryAdapter.PantryViewHolder> {
 
     private List<PantryItem> pantryItemList = new ArrayList<>();

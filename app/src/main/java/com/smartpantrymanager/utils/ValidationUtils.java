@@ -1,10 +1,9 @@
+//Imports
 package com.smartpantrymanager.utils;
-
 import android.text.TextUtils;
 
-/**
- * Validation helpers for input validation.
- */
+// Validation helpers for input validation.
+
 public class ValidationUtils {
 
     public static boolean isValidName(String name) {

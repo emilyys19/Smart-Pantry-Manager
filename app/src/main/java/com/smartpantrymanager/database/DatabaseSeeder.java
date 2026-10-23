@@ -1,13 +1,12 @@
 package com.smartpantrymanager.database;
-
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * DatabaseSeeder - seeds initial recipe collection.
- */
+// DatabaseSeeder - seeds initial recipe collection.
+
 public class DatabaseSeeder {
 
+    //Predefined recipes
     public static void seedRecipes(AppDatabase db) {
         if (db.recipeDao().countHarvestRecipes() > 0) return;
 

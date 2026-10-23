@@ -2,19 +2,15 @@ package com.smartpantrymanager;
 
 import android.os.Bundle;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import com.smartpantrymanager.database.AppDatabase;
 import com.smartpantrymanager.database.Recipe;
 import com.smartpantrymanager.database.RecipeIngredient;
-
 import java.util.List;
 
-/**
- * RecipeDetailActivity - displays full details for a selected recipe.
- */
+// RecipeDetailActivity - displays full details for a selected recipe.
+
 public class RecipeDetailActivity extends AppCompatActivity {
 
     @Override

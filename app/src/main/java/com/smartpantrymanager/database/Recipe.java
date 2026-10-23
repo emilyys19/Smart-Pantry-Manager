@@ -4,9 +4,8 @@ import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
-/**
- * Recipe - entity representing a recipe.
- */
+// Recipe - entity representing a recipe.
+
 @Entity(tableName = "recipes")
 public class Recipe {
 

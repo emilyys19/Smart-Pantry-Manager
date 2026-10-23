@@ -1,5 +1,5 @@
+//Imports
 package com.smartpantrymanager;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,24 +7,20 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.smartpantrymanager.adapters.PantryAdapter;
 import com.smartpantrymanager.database.AppDatabase;
 import com.smartpantrymanager.database.PantryItem;
-
 import java.util.List;
 
-/**
- * PantryListActivity - main pantry screen displaying pantry items in a RecyclerView.
- */
+// PantryListActivity - main pantry screen displaying pantry items in a RecyclerView.
+
 public class PantryListActivity extends AppCompatActivity {
 
     private RecyclerView pantryRecycler;

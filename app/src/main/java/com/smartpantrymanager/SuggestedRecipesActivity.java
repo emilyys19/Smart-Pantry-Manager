@@ -1,15 +1,13 @@
+//Imports
 package com.smartpantrymanager;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.smartpantrymanager.adapters.RecipeAdapter;
 import com.smartpantrymanager.database.AppDatabase;
@@ -17,14 +15,12 @@ import com.smartpantrymanager.database.PantryItem;
 import com.smartpantrymanager.database.Recipe;
 import com.smartpantrymanager.database.RecipeIngredient;
 import com.smartpantrymanager.utils.IngredientMatcher;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * SuggestedRecipesActivity - displays strictly matched recipes and almost-there recipes.
- */
+// SuggestedRecipesActivity - displays strictly matched recipes and almost-there recipes.
+
 public class SuggestedRecipesActivity extends AppCompatActivity {
 
     private RecyclerView strictRecycler;

@@ -1,14 +1,11 @@
 package com.smartpantrymanager.utils;
-
 import com.smartpantrymanager.database.PantryItem;
 import com.smartpantrymanager.database.Recipe;
-
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * MatcherTestHelper - helper to run self checks on matcher logic.
- */
+// MatcherTestHelper - helper to run self checks on matcher logic.
+
 public class MatcherTestHelper {
 
     public static void runSelfCheck() {

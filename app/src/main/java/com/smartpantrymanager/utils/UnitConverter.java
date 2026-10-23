@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * UnitConverter - converts kitchen measurement units for comparisons.
+ * Utility to handle kitchen units conversion (weight, volume, counts).
  */
 public class UnitConverter {
 
@@ -12,6 +12,7 @@ public class UnitConverter {
     private static final Map<String, Double> volumeToMlMap = new HashMap<>();
 
     static {
+        // Populate standard weight units relative to grams
         weightToGramsMap.put("g", 1.0);
         weightToGramsMap.put("gram", 1.0);
         weightToGramsMap.put("grams", 1.0);
@@ -22,6 +23,7 @@ public class UnitConverter {
         weightToGramsMap.put("lb", 453.592);
         weightToGramsMap.put("lbs", 453.592);
 
+        // Populate standard volume units relative to milliliters
         volumeToMlMap.put("ml", 1.0);
         volumeToMlMap.put("l", 1000.0);
         volumeToMlMap.put("litre", 1000.0);
@@ -53,6 +55,7 @@ public class UnitConverter {
                 normalized.equals("clove") || normalized.equals("cloves");
     }
 
+    // Checks if two units belong to the same category (e.g. both are weight or both are volume)
     public static boolean isCompatible(String firstUnit, String secondUnit) {
         if (firstUnit == null || secondUnit == null) return false;
         String normFirst = firstUnit.toLowerCase().trim();
@@ -64,6 +67,7 @@ public class UnitConverter {
         return false;
     }
 
+    // Converts an amount to its base unit equivalent (grams or milliliters)
     public static double getBaseQuantity(double amount, String unit) {
         if (unit == null) return amount;
         String lookupKey = unit.toLowerCase().trim();

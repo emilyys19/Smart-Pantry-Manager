@@ -1,14 +1,12 @@
 package com.smartpantrymanager.database;
-
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.Ignore;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
-/**
- * RecipeIngredient - entity linking a Recipe to an ingredient requirement.
- */
+// RecipeIngredient - entity linking a Recipe to an ingredient requirement.
+
 @Entity(tableName = "recipe_ingredients",
         foreignKeys = @ForeignKey(entity = Recipe.class,
                 parentColumns = "id",

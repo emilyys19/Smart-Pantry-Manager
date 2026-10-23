@@ -1,118 +1,114 @@
 [
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\menu_bottom_nav_menu.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\menu\\bottom_nav_menu.xml"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/menu_toolbar_menu.xml.flat",
+        "source": "com.smartpantrymanager.app-main-35:/menu/toolbar_menu.xml"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.smartpantrymanager.app-main-35:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\xml\\backup_rules.xml"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.smartpantrymanager.app-main-35:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.smartpantrymanager.app-main-35:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\drawable_ic_pantry_logo.png.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\drawable\\ic_pantry_logo.png"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/layout_activity_suggested_recipes.xml.flat",
+        "source": "com.smartpantrymanager.app-main-35:/layout/activity_suggested_recipes.xml"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\mipmap_ic_launcher.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\mipmap\\ic_launcher.xml"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/layout_item_pantry.xml.flat",
+        "source": "com.smartpantrymanager.app-main-35:/layout/item_pantry.xml"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/drawable_spinner_background.xml.flat",
+        "source": "com.smartpantrymanager.app-main-35:/drawable/spinner_background.xml"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.smartpantrymanager.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/layout_activity_settings.xml.flat",
+        "source": "com.smartpantrymanager.app-main-35:/layout/activity_settings.xml"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\drawable_circle_background.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\drawable\\circle_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\layout_activity_pantry_list.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\layout\\activity_pantry_list.xml"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.smartpantrymanager.app-main-35:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
         "merged": "com.smartpantrymanager.app-merged_res-33:/layout_activity_pantry_list.xml.flat",
         "source": "com.smartpantrymanager.app-main-35:/layout/activity_pantry_list.xml"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\layout_activity_recipe_detail.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\layout\\activity_recipe_detail.xml"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/xml_data_extraction_rules.xml.flat",
+        "source": "com.smartpantrymanager.app-main-35:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\mipmap_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\mipmap\\ic_launcher_round.xml"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/drawable_ic_pantry_logo.png.flat",
+        "source": "com.smartpantrymanager.app-main-35:/drawable/ic_pantry_logo.png"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\drawable_spinner_background.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\drawable\\spinner_background.xml"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/mipmap_ic_launcher.xml.flat",
+        "source": "com.smartpantrymanager.app-main-35:/mipmap/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\layout\\activity_main.xml"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.smartpantrymanager.app-main-35:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/drawable_circle_background.xml.flat",
+        "source": "com.smartpantrymanager.app-main-35:/drawable/circle_background.xml"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\menu_toolbar_menu.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\menu\\toolbar_menu.xml"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.smartpantrymanager.app-main-35:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\layout_activity_suggested_recipes.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\layout\\activity_suggested_recipes.xml"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/xml_backup_rules.xml.flat",
+        "source": "com.smartpantrymanager.app-main-35:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\layout_item_recipe.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\layout\\item_recipe.xml"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/layout_activity_main.xml.flat",
+        "source": "com.smartpantrymanager.app-main-35:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\xml\\data_extraction_rules.xml"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/drawable_ic_pantry_logo_original.png.flat",
+        "source": "com.smartpantrymanager.app-main-35:/drawable/ic_pantry_logo_original.png"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\layout_activity_add_edit_ingredient.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\layout\\activity_add_edit_ingredient.xml"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.smartpantrymanager.app-main-35:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.smartpantrymanager.app-main-35:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/layout_activity_add_edit_ingredient.xml.flat",
+        "source": "com.smartpantrymanager.app-main-35:/layout/activity_add_edit_ingredient.xml"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\drawable_ic_pantry_logo_original.png.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\drawable\\ic_pantry_logo_original.png"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.smartpantrymanager.app-main-35:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/layout_activity_recipe_detail.xml.flat",
+        "source": "com.smartpantrymanager.app-main-35:/layout/activity_recipe_detail.xml"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/mipmap_ic_launcher_round.xml.flat",
+        "source": "com.smartpantrymanager.app-main-35:/mipmap/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\layout_activity_settings.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\layout\\activity_settings.xml"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/layout_item_recipe.xml.flat",
+        "source": "com.smartpantrymanager.app-main-35:/layout/item_recipe.xml"
     },
     {
-        "merged": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-merged_res-33:\\layout_item_pantry.xml.flat",
-        "source": "C:\\Users\\emily\\.gradle\\daemon\\8.4\\com.smartpantrymanager.app-main-35:\\layout\\item_pantry.xml"
+        "merged": "com.smartpantrymanager.app-merged_res-33:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.smartpantrymanager.app-main-35:/menu/bottom_nav_menu.xml"
     }
 ]

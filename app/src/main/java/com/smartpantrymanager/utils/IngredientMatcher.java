@@ -10,14 +10,16 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * IngredientMatcher - logic for strict recipe ingredient matching.
+ * Handles matching pantry inventory items against recipe requirements.
  */
 public class IngredientMatcher {
 
+    // Cleans and normalizes ingredient names so plurals or slight wording differences match properly
     public static String normalizeIngredientName(String rawName) {
         if (rawName == null) return "";
         String cleanedName = rawName.toLowerCase().trim().replaceAll("\\s+", " ");
 
+        // Basic plural removal to match singular pantry items
         if (cleanedName.endsWith("ies") && cleanedName.length() > 4) {
             cleanedName = cleanedName.substring(0, cleanedName.length() - 3) + "y";
         } else if (cleanedName.endsWith("es") && cleanedName.length() > 4) {
@@ -31,6 +33,7 @@ public class IngredientMatcher {
             cleanedName = cleanedName.substring(0, cleanedName.length() - 1);
         }
 
+        // Apply any specific synonym mappings
         Map<String, String> synonymLookup = getSynonymMap();
         if (synonymLookup.containsKey(cleanedName)) {
             cleanedName = synonymLookup.get(cleanedName);
@@ -46,6 +49,7 @@ public class IngredientMatcher {
         return synonymMap;
     }
 
+    // Checks if the user has enough quantity of an ingredient in their pantry compared to what a recipe needs
     public static boolean hasEnoughQuantity(double pantryQty, String pantryUnit,
                                            double requiredQty, String requiredUnit) {
         double pantryBaseQty = UnitConverter.getBaseQuantity(pantryQty, pantryUnit);
@@ -63,6 +67,7 @@ public class IngredientMatcher {
         return false;
     }
 
+    // Determines if the user has all required ingredients in sufficient quantities for a recipe
     public static boolean isStrictMatch(Recipe targetRecipe, List<RecipeIngredient> requiredList,
                                         List<PantryItem> pantryStock) {
         if (requiredList == null || requiredList.isEmpty()) return false;
@@ -93,6 +98,7 @@ public class IngredientMatcher {
         return true;
     }
 
+    // Filters recipes that can be made right now with current pantry stock
     public static List<Recipe> getStrictMatches(List<Recipe> allRecipes,
                                                 Map<Integer, List<RecipeIngredient>> recipeIngredientLookup,
                                                 List<PantryItem> pantryStock) {
@@ -106,6 +112,7 @@ public class IngredientMatcher {
         return matchedRecipes;
     }
 
+    // Finds recipes where the user is missing just one ingredient ("almost there")
     public static List<Recipe> getAlmostThereMatches(List<Recipe> allRecipes,
                                                     Map<Integer, List<RecipeIngredient>> recipeIngredientLookup,
                                                     List<PantryItem> pantryStock) {
@@ -120,6 +127,7 @@ public class IngredientMatcher {
         return almostThere;
     }
 
+    // Counts how many required ingredients are missing from the pantry
     public static int countMissingIngredients(List<RecipeIngredient> requiredIngredients, List<PantryItem> pantryStock) {
         if (requiredIngredients == null) return 0;
         Map<String, PantryItem> pantryMap = new HashMap<>();
@@ -137,6 +145,7 @@ public class IngredientMatcher {
         return missingTally;
     }
 
+    // Returns the name of the first missing ingredient for a recipe
     public static String getMissingIngredientName(List<RecipeIngredient> requiredIngredients, List<PantryItem> pantryStock) {
         Map<String, PantryItem> pantryMap = new HashMap<>();
         for (PantryItem singleStock : pantryStock) {

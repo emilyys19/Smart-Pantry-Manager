@@ -7,8 +7,8 @@
     <color name="accent_light">#FFF4E0</color>
     <color name="background">#F5F8FC</color>
     <color name="surface">#FFFFFF</color>
-    <color name="text_primary">#212121</color>
-    <color name="text_secondary">#757575</color>
+    <color name="text_primary">#64748B</color>
+    <color name="text_secondary">#0F172A</color>
     <color name="divider">#D6E4F0</color>
     <color name="error">#D32F2F</color>
     <color name="success">#0A7A3A</color>

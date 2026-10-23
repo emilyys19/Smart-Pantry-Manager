@@ -1,22 +1,17 @@
 package com.smartpantrymanager.adapters;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.smartpantrymanager.R;
 import com.smartpantrymanager.database.Recipe;
-
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * RecipeAdapter - adapter to show suggested recipes in a RecyclerView.
- */
+// RecipeAdapter - adapter to show suggested recipes in a RecyclerView.
+
 public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder> {
 
     private List<Recipe> recipeList = new ArrayList<>();

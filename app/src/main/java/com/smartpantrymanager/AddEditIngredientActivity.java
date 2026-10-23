@@ -1,23 +1,20 @@
+//Imports
 package com.smartpantrymanager;
-
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.smartpantrymanager.database.AppDatabase;
 import com.smartpantrymanager.database.PantryItem;
 import com.smartpantrymanager.utils.ValidationUtils;
 
-/**
- * AddEditIngredientActivity - activity for adding or editing a pantry ingredient.
- */
+// Screen for adding a new pantry item or editing an existing one.
+
 public class AddEditIngredientActivity extends AppCompatActivity {
 
     private TextInputEditText nameEntry, amountEntry, expiryEntry;
@@ -30,6 +27,7 @@ public class AddEditIngredientActivity extends AppCompatActivity {
     private boolean isEditingExisting = false;
     private int editingId = -1;
 
+    // Measurement units for the dropdown spinner
     private final String[] availableUnits = {"g", "kg", "ml", "l", "pcs", "tsp", "tbsp", "cup", "oz"};
 
     @Override
@@ -37,6 +35,7 @@ public class AddEditIngredientActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_edit_ingredient);
 
+        // Setup toolbar with back button functionality
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
@@ -44,8 +43,10 @@ public class AddEditIngredientActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
+        // Initialize local database instance
         pantryDatabase = AppDatabase.getInstance(this);
 
+        // Bind UI views
         nameEntry = findViewById(R.id.input_name);
         amountEntry = findViewById(R.id.input_quantity);
         expiryEntry = findViewById(R.id.input_expiry);
@@ -55,11 +56,13 @@ public class AddEditIngredientActivity extends AppCompatActivity {
         saveButton = findViewById(R.id.btn_save);
         cancelButton = findViewById(R.id.btn_cancel);
 
+        // Populate unit dropdown spinner with adapter
         ArrayAdapter<String> unitAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, availableUnits);
         unitAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         unitPicker.setAdapter(unitAdapter);
 
+        // Check if we passed an item ID, which means we are editing instead of adding fresh
         if (getIntent().hasExtra("pantry_item_id")) {
             isEditingExisting = true;
             editingId = getIntent().getIntExtra("pantry_item_id", -1);
@@ -68,10 +71,12 @@ public class AddEditIngredientActivity extends AppCompatActivity {
             String incomingUnit = getIntent().getStringExtra("pantry_item_unit");
             String incomingExpiry = getIntent().getStringExtra("pantry_item_expiry");
 
+            // Fill form fields with existing item data
             nameEntry.setText(incomingName);
             amountEntry.setText(String.valueOf(incomingAmount));
             if (incomingExpiry != null) expiryEntry.setText(incomingExpiry);
 
+            // Select the correct unit in the spinner
             for (int unitIndex = 0; unitIndex < availableUnits.length; unitIndex++) {
                 if (availableUnits[unitIndex].equalsIgnoreCase(incomingUnit)) {
                     unitPicker.setSelection(unitIndex);
@@ -89,12 +94,13 @@ public class AddEditIngredientActivity extends AppCompatActivity {
                 getSupportActionBar().setTitle(R.string.add_ingredient);
         }
 
+        // Button click listeners for saving or cancelling
         saveButton.setOnClickListener(v -> attemptSave());
         cancelButton.setOnClickListener(v -> finish());
-
         toolbar.setNavigationOnClickListener(v -> finish());
     }
 
+    // Validates form input and saves or updates the pantry item in database
     private void attemptSave() {
         String enteredName = nameEntry.getText() != null ? nameEntry.getText().toString().trim() : "";
         String enteredAmountText = amountEntry.getText() != null ? amountEntry.getText().toString().trim() : "";
@@ -106,6 +112,7 @@ public class AddEditIngredientActivity extends AppCompatActivity {
 
         boolean formValid = true;
 
+        // Make sure name and quantity meet requirements
         if (!ValidationUtils.isValidName(enteredName)) {
             nameWrapper.setError(getString(R.string.validation_name_required));
             formValid = false;
@@ -123,6 +130,7 @@ public class AddEditIngredientActivity extends AppCompatActivity {
 
         double parsedAmount = Double.parseDouble(enteredAmountText);
 
+        // Update database record if editing, otherwise insert a brand new entry
         if (isEditingExisting && editingItem != null) {
             editingItem.setName(enteredName);
             editingItem.setAmount(parsedAmount);

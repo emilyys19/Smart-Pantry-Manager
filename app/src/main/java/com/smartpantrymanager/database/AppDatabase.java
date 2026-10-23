@@ -11,7 +11,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 import java.util.concurrent.Executors;
 
 /**
- * AppDatabase - Room database singleton.
+ * Main Room database singleton managing pantry items, recipes, and recipe ingredients.
  */
 @Database(entities = {PantryItem.class, Recipe.class, RecipeIngredient.class}, version = 3, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
@@ -21,6 +21,7 @@ public abstract class AppDatabase extends RoomDatabase {
     public abstract PantryDao pantryDao();
     public abstract RecipeDao recipeDao();
 
+    // Singleton pattern to retrieve the database instance safely across threads
     public static AppDatabase getInstance(Context context) {
         if (instance == null) {
             synchronized (AppDatabase.class) {
@@ -35,6 +36,7 @@ public abstract class AppDatabase extends RoomDatabase {
                                 @Override
                                 public void onCreate(@NonNull SupportSQLiteDatabase db) {
                                     super.onCreate(db);
+                                    // Seed initial recipes when database is first created
                                     Executors.newSingleThreadExecutor().execute(() -> {
                                         AppDatabase innerDatabase = getInstance(context);
                                         try { Thread.sleep(500); } catch (InterruptedException ignored) {}
@@ -44,6 +46,7 @@ public abstract class AppDatabase extends RoomDatabase {
                             })
                             .build();
 
+                    // Fallback check if recipe table is empty
                     if (instance.recipeDao().countHarvestRecipes() == 0) {
                         DatabaseSeeder.seedRecipes(instance);
                     }

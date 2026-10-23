@@ -11,8 +11,8 @@
     <color name="primary_light">#E1EFFF</color>
     <color name="success">#0A7A3A</color>
     <color name="surface">#FFFFFF</color>
-    <color name="text_primary">#212121</color>
-    <color name="text_secondary">#757575</color>
+    <color name="text_primary">#64748B</color>
+    <color name="text_secondary">#0F172A</color>
     <color name="warning">#E65100</color>
     <string name="about_text">Smart Pantry Manager v1.0\nBuilt in Java with Room (SQLite)\nStrict-matching ensures zero-waste suggestions.</string>
     <string name="add_ingredient">Add Ingredient</string>
